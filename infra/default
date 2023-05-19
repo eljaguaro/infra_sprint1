@@ -1,7 +1,7 @@
 
 server {
 
-
+    server_tokens off;
     server_name davidissooosexy.myftp.org;
 
     location /api/ {
@@ -32,6 +32,7 @@ server {
     if ($host = davidissooosexy.myftp.org) {
         return 301 https://$host$request_uri;
     } # managed by Certbot
+    server_tokens off;
     server_name davidissooosexy.myftp.org;
     return 404; # managed by Certbot
 
@@ -49,6 +50,8 @@ server {
 
 
 server {
+
+    server_tokens off;
     server_name rosiebabygirl.hopto.org;
 
     location /api/ {
@@ -88,7 +91,7 @@ server {
     if ($host = rosiebabygirl.hopto.org) {
         return 301 https://$host$request_uri;
     } # managed by Certbot
-
+    server_tokens off;
     server_name rosiebabygirl.hopto.org;
     return 404; # managed by Certbot
 
@@ -101,8 +104,7 @@ server {
     if ($host = rosiebabygirl.hopto.org) {
         return 301 https://$host$request_uri;
     } # managed by Certbot
-
-
+    server_tokens off;
     server_name rosiebabygirl.hopto.org;
     return 404; # managed by Certbot
 
